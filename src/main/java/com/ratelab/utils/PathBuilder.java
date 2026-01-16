@@ -7,7 +7,7 @@ public class PathBuilder {
     static String endpoint = "/pair/";
     static long amount;
 
-    public static String buildPath(String fromCurrency, String toCurrency, int amount) {
+    public static String buildPath(String fromCurrency, String toCurrency, long amount) {
         return baseUrl + apiKey + endpoint + fromCurrency + "/" + toCurrency + "/" + amount;
     }
 }

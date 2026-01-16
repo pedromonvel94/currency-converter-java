@@ -1,3 +1,6 @@
+
+# Proyecto RateLab
+
 ## Ejecutar el proyecto con Maven Wrapper
 
 Este proyecto incluye **Maven Wrapper**, así que no necesitas tener Maven instalado en tu máquina.

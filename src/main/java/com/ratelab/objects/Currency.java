@@ -29,12 +29,16 @@ public class Currency {
 
     @Override
     public String toString() {
-        return "Exchange" +
+        return "----------------------------------------" + "\n" +
+                "Exchange" +
                 "From: " + base_code + ", to: " + target_code + "\n" +
                 "Conversion rate: " + "\n" +
                 "1 " + base_code + " = " + conversion_rate + " " + target_code + "\n" +
                 " " + "\n" +
-                "Conversion result: " + conversion_result;
+                " ------------------------------" + "\n" +
+                "| Conversion result: " + conversion_result + " |\n" +
+                " ------------------------------"+ "\n" +
+                "----------------------------------------" ;
     }
 
 }

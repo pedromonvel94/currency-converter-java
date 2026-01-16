@@ -1,5 +1,6 @@
 package com.ratelab.utils;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ConsolePrompts {
@@ -11,11 +12,18 @@ public class ConsolePrompts {
         return "";
     }
 
-    public int askingAmount (){
-        System.out.println("Escribe la cantidad que deseas convertir: ");
-        int amount = scanner.nextInt();
-        scanner.nextLine();
-        return amount;
+    public long askingAmount (){
+        while (true) {
+            try {
+                System.out.println("Escribe la cantidad que deseas convertir: ");
+                long amount = scanner.nextLong();
+                scanner.nextLine();
+                return amount;
+            } catch (InputMismatchException e) {
+                System.out.println("Error: Por favor, ingresa un número válido.");
+                scanner.nextLine();
+            }
+        }
     }
 
     public String askingFromCurrency () {
@@ -30,7 +38,7 @@ public class ConsolePrompts {
                 "COP - Peso Colombiano\n" +
                 "MXN - Peso Mexicano\n" +
                 "ARS - Peso Argentino\n" +
-                "CNY - Yuan Chino\n");
+                "CNY - Yuan Chino");
         return scanner.nextLine().toUpperCase();
     }
 
@@ -46,7 +54,7 @@ public class ConsolePrompts {
                 "COP - Peso Colombiano\n" +
                 "MXN - Peso Mexicano\n" +
                 "ARS - Peso Argentino\n" +
-                "CNY - Yuan Chino\n");
+                "CNY - Yuan Chino");
         return scanner.nextLine().toUpperCase();
 
     }

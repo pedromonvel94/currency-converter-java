@@ -1,7 +1,5 @@
-package main.java.com.ratelab.objects;
+package com.ratelab.objects;
 
-import java.util.Map;
-
-public record CurrencyExApi(String base_code, Map<String, Double> rates) {
+public record CurrencyExApi(String base_code, String target_code, double conversion_rate, double conversion_result) {
 
 }

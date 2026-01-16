@@ -1,1 +1,7 @@
-main/java/com/ratelab/principal/RateLab.class
+main\java\com\ratelab\objects\Currency.class
+com\ratelab\principal\RateLab.class
+main\java\com\ratelab\utils\ConsolePrompts.class
+main\java\com\ratelab\objects\CurrencyExApi.class
+main\java\com\ratelab\utils\PathBuilder.class
+main\java\com\ratelab\utils\GettingRate.class
+main\java\com\ratelab\utils\CurrencyExchange.class
